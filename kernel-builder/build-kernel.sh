@@ -46,7 +46,7 @@ patch_kernel(){
 	cp -ar ../$AUFS_REPOSITORY/fs .
 	cp -a ../$AUFS_REPOSITORY/include/uapi/linux/aufs_type.h include/uapi/linux
 	patch -p1 < ../$AUFS_REPOSITORY/aufs6-kbuild.patch
-	patch -p1 < ../$AUFS_REPOSITORY/aufs6-base.
+	patch -p1 < ../$AUFS_REPOSITORY/aufs6-base.patch
 	patch -p1 < ../$AUFS_REPOSITORY/aufs6-mmap.patch
 	patch -p1 < ../$AUFS_REPOSITORY/aufs6-standalone.patch
 	patch -p1 < ../$AUFS_REPOSITORY/aufs6-loopback.patch
