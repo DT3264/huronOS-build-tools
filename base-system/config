@@ -13,7 +13,7 @@
 # then you can ignore recompiling isolinux.bin, just rename LIVEKITNAME
 # and you're done.
 LIVEKITNAME="huronOS"
-
+BUILD_YEAR="2023"
 BUILD_VERSION="0023"
 
 # Kernel file, will be copied to your Live Kit
