@@ -9,13 +9,14 @@
 #		<http://huronos.org>
 #
 #	Licensed under the GNU GPL Version 2
-#		<http://www.gnu.org/licenses/gpl-2.0.html>	
+#		<http://www.gnu.org/licenses/gpl-2.0.html>
 #
 #	Authors:
 #		Enya Quetzalli <equetzal@huronos.org>
 
 set -xe
 NAME=chromium
+TARGET="/run/initramfs/memory/system/huronOS/software/internet/"
 
 ## Install software
 apt update
@@ -39,7 +40,9 @@ rm -rf /tmp/$NAME.hsm/usr/share/icons
 rm -rf /tmp/$NAME.hsm/usr/share/chromium/initial_bookmarks.html
 rm -rf /tmp/$NAME.hsm/usr/share/applications/bamf-2.index
 rm -rf /tmp/$NAME.hsm/usr/share/applications/mimeinfo.cache
+find /tmp/$NAME.hsm
 dir2hsm /tmp/$NAME.hsm
 
-cp /tmp/$NAME.hsm /run/initramfs/memory/system/huronOS/internet/
+mkdir "$TARGET"
+cp /tmp/$NAME.hsm "$TARGET"
 echo "Finished creating $NAME.hsm!"
