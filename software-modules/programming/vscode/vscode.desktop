@@ -2,8 +2,8 @@
 Name=Visual Studio Code
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/usr/bin/codium --unity-launch %F
-Icon=com.visualstudio.code
+Exec=sh -c 'rm -f ~/.vscode-oss/extensions/extensions.json && rm -f ~/.vscode-oss/extensions/.obsolete && /usr/bin/codium --unity-launch %F'
+Icon=/usr/share/codium/resources/app/resources/linux/code.png
 Type=Application
 StartupNotify=false
 StartupWMClass=Code
