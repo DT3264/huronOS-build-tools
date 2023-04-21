@@ -18,5 +18,6 @@ jobs:
           target-directory: 'docs'
           destination-github-username: 'dt3264'
           destination-repository-name: 'huronos-auto-website'
-          user-email: cernadaniel32@gmail.com
+          user-name: github-actions[bot]
+          user-email: 41898282+github-actions[bot]@users.noreply.github.com
           target-branch: main
